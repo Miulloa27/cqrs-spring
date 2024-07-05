@@ -6,12 +6,16 @@ import com.mikauran.banking.account.common.events.AccountOpenedEvent;
 import com.mikauran.banking.account.common.events.FundsDepositedEvent;
 import com.mikauran.banking.account.common.events.FundsWithdrawnEvent;
 import com.mikauran.banking.cqrs.core.domain.AggregateRoot;
+import lombok.AllArgsConstructor;
+import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
 import java.util.Date;
 
+@Data
 @NoArgsConstructor
+@AllArgsConstructor
 public class AccountAggregate extends AggregateRoot {
     private Boolean active;
     private BigDecimal balance;
