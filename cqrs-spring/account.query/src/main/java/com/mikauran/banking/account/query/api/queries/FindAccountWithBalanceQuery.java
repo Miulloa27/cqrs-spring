@@ -10,6 +10,7 @@ import java.math.BigDecimal;
 @Data
 @AllArgsConstructor
 public class FindAccountWithBalanceQuery extends BaseQuery {
-    private BigDecimal balance;
+
     private EqualityType equalityType;
+    private BigDecimal balance;
 }
